@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · Deadland com</title>
+<style>
+/* Une colonne de texte, mêmes couleurs que le tableau de bord. */
+:root { --bg: #f2f3f1; --fg: #1c201e; --muted: #5b635e; --line: #d8dcd7; --accent: #35614f; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg: #111412; --fg: #e3e7e4; --muted: #97a09a; --line: #2b312e; --accent: #86b9a2; color-scheme: dark; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 40px max(16px, env(safe-area-inset-right, 0px)) 64px max(16px, env(safe-area-inset-left, 0px)); }
+h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 4px; text-wrap: balance; }
+h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+.maj { color: var(--muted); margin: 0 0 24px; font-size: .9rem; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 6px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité de Deadland com</h1>
+  <p class="maj">Mise à jour le 26 octobre 2026</p>
+
+  <p>Deadland com est un outil interne de l'équipe du serveur Minecraft Bedrock Deadland. Il sert à suivre les statistiques des vidéos publiées sur nos propres comptes. Il n'est pas proposé au public.</p>
+
+  <h2>Données lues sur TikTok</h2>
+  <ul>
+    <li>Avec l'autorisation <code>user.info.basic</code> : l'identifiant de compte propre à l'outil (open_id). L'outil n'enregistre ni le nom ni la photo de profil.</li>
+    <li>Avec l'autorisation <code>video.list</code> : la liste des vidéos publiques du compte, avec leur titre ou description, leur date de publication, leur lien et leurs compteurs (vues, likes, commentaires, partages).</li>
+  </ul>
+  <p>Seul le compte TikTok de Deadland, autorisé par l'équipe elle-même, est concerné. L'outil ne lit aucune donnée d'autres utilisateurs et ne publie rien.</p>
+
+  <h2>Données lues sur YouTube</h2>
+  <ul>
+    <li>Avec l'autorisation <code>youtube.readonly</code> : le nom de la chaîne, la liste de ses vidéos avec leur titre, leur date de publication, leur durée et leurs compteurs publics (vues, likes, commentaires).</li>
+    <li>Avec l'autorisation <code>yt-analytics.readonly</code> : les statistiques de ces vidéos (durée moyenne de visionnage, pourcentage moyen regardé, partages, abonnés gagnés).</li>
+  </ul>
+  <p>Seule la chaîne YouTube de Deadland, autorisée par l'équipe elle-même, est concernée. L'outil ne lit aucune donnée d'autres utilisateurs, ne modifie rien et ne publie rien. L'utilisation des données reçues des API Google respecte les <a href="https://developers.google.com/terms/api-services-user-data-policy">règles Google sur les données utilisateur des services d'API</a>, y compris les exigences d'usage limité.</p>
+
+  <h2>Utilisation</h2>
+  <p>Ces chiffres s'affichent uniquement dans le tableau de bord interne de l'équipe, pour décider quelles vidéos refaire. Ils ne servent pas à la publicité, ne sont pas vendus et ne sont partagés avec personne.</p>
+
+  <h2>Conservation</h2>
+  <p>Les données sont stockées dans des fichiers privés sur le serveur de l'équipe, accessibles seulement avec un compte administrateur protégé par mot de passe. Les jetons d'accès TikTok expirent au bout d'un an au plus.</p>
+
+  <h2>Retrait et suppression</h2>
+  <p>L'autorisation peut être retirée à tout moment dans les paramètres de sécurité de TikTok (applications autorisées) ou dans la page « Applications tierces » du compte Google (myaccount.google.com). Les données déjà relevées sont effacées sur simple demande.</p>
+
+  <h2>Contact</h2>
+  <p>Écris à l'équipe Deadland sur son serveur Discord (lien dans la bio de nos réseaux).</p>
+
+  <hr>
+
+  <h1>Deadland com privacy policy</h1>
+  <p class="maj">Last updated October 26, 2026</p>
+  <p>Deadland com is an internal tool of the team behind the Deadland Minecraft Bedrock server. It tracks the statistics of videos posted on our own accounts and is not offered to the public.</p>
+  <p><strong>TikTok data read:</strong> the app-specific account identifier (open_id) through <code>user.info.basic</code>, and the account's public videos with their title or description, posting date, link, and view, like, comment and share counts through <code>video.list</code>. Only the Deadland TikTok account, authorized by the team itself, is involved. The tool reads no other user's data and publishes nothing.</p>
+  <p><strong>YouTube data read:</strong> through <code>youtube.readonly</code>, the channel name and its videos with title, publish date, length and public counts (views, likes, comments); through <code>yt-analytics.readonly</code>, their statistics (average view duration, average percentage viewed, shares, subscribers gained). Only the Deadland YouTube channel, authorized by the team itself, is involved. The tool modifies and publishes nothing. Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <p><strong>Use:</strong> the figures are shown only in the team's internal dashboard. They are not used for advertising, sold, or shared with anyone.</p>
+  <p><strong>Storage:</strong> private files on the team's server, behind password-protected admin accounts. TikTok access tokens expire within one year.</p>
+  <p><strong>Removal:</strong> the authorization can be revoked at any time in TikTok's security settings (authorized apps) or on the Google Account "Third-party apps" page (myaccount.google.com). Collected data is deleted on request.</p>
+  <p><strong>Contact:</strong> the Deadland team on its Discord server (link in our social bios).</p>
+</main>
+</body>
+</html>
